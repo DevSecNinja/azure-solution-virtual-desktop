@@ -1,0 +1,46 @@
+{
+	"name": "azure-solution-virtual-desktop | DevSecNinja",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"common": {
+			"installZsh": "true",
+			"installOhMyZsh": "true",
+			"upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/powershell:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/dhoeric/features/aztfy:1": {},
+		"ghcr.io/dhoeric/features/terraform-docs:1": {},
+		"ghcr.io/stuartleeks/dev-container-features/azure-cli-persistence:0": {},
+		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+	},
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"zsh": {
+				"path": "/bin/zsh",
+				"icon": "terminal-bash",
+				"args": [],
+				"overrideName": true
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "zsh",
+		"terminal.integrated.cwd": "${workspaceFolder}"
+	},
+	"extensions": [
+		"DavidAnson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"fabiospampinato.vscode-terminals",
+		"hashicorp.terraform",
+		"ms-azuretools.vscode-docker",
+		"ms-vscode.azure-account",
+		"ms-vscode.azurecli",
+		"redhat.vscode-yaml",
+		"ms-azuretools.vscode-azureterraform",
+		"github.vscode-pull-request-github"
+	],
+	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh && bash ./.devcontainer/initializeDevContainer.sh",
+	"postStartCommand": "bash ./.devcontainer/postStartCommand.sh",
+	"remoteUser": "vscode"
+}

@@ -1,0 +1,35 @@
+---
+name: "Virtual Desktop"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "solutions/virtual-desktop/**"
+      - "generic/**"
+      - ".github/workflows/virtual-desktop.yml"
+      - "!**.md"
+  pull_request:
+    paths:
+      - "solutions/virtual-desktop/**"
+      - "generic/**"
+      - ".github/workflows/virtual-desktop.yml"
+      - "!**.md"
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write # For Terraform Docs
+  pull-requests: write # For Terraform Docs
+  id-token: write # For OpenID Connect
+
+jobs:
+  terraform:
+    uses: DevSecNinja/github-actions/.github/workflows/reusable-workflow-terraform-ci.yml@main
+    with:
+      working-directory: ./solutions/virtual-desktop
+      use-oid-connect: true
+      run-terraform-plan: false
+      run-terraform-apply: false # TODO: requires management + connectivity permissions on AVD
+    secrets: inherit

@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"davidanson.vscode-markdownlint",
+		"eamodio.gitlens",
+		"fabiospampinato.vscode-terminals",
+		"github.vscode-pull-request-github",
+		"hashicorp.terraform",
+		"ms-azuretools.vscode-azureterraform",
+		"ms-vscode.azure-account",
+		"msazurermtools.azurerm-vscode-tools"
+	]
+}

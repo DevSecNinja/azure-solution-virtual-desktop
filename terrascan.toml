@@ -1,0 +1,11 @@
+# Terrascan configuration file
+
+# Scan and skip rules configuration
+[rules]
+    # skip rules (list of rules to skip)
+	# AC_AZURE_0389: Resource Group locks not needed
+	# AC_AZURE_0169: Key Vault logging is set by policy
+    skip-rules = [
+        "AC_AZURE_0389",
+		"AC_AZURE_0169"
+    ]
