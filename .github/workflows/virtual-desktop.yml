@@ -30,4 +30,6 @@ jobs:
     with:
       working-directory: ./solutions/virtual-desktop
       use-oid-connect: true
+      run-terraform-plan: false
+      run-terraform-apply: false # TODO: requires management + connectivity permissions on AVD
     secrets: inherit
