@@ -32,7 +32,6 @@ jobs:
     ##################
     # Load all steps #
     ##################
-    if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
       ##########################
       # Checkout the code base #
