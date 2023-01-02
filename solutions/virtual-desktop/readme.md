@@ -32,9 +32,9 @@ I'm using `terraform-docs` to update my documentation automatically:
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_avdhv"></a> [avdhv](#module\_avdhv) | DevSecNinja/compute/azurerm | 1.1.3 |
-| <a name="module_avdpe"></a> [avdpe](#module\_avdpe) | DevSecNinja/compute/azurerm | 1.1.3 |
-| <a name="module_avdpo"></a> [avdpo](#module\_avdpo) | DevSecNinja/compute/azurerm | 1.1.3 |
+| <a name="module_avdhv"></a> [avdhv](#module\_avdhv) | DevSecNinja/compute/azurerm | 1.1.4 |
+| <a name="module_avdpe"></a> [avdpe](#module\_avdpe) | DevSecNinja/compute/azurerm | 1.1.4 |
+| <a name="module_avdpo"></a> [avdpo](#module\_avdpo) | DevSecNinja/compute/azurerm | 1.1.4 |
 
 ## Resources
 
