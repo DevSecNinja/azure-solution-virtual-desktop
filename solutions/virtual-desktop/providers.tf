@@ -29,6 +29,7 @@ provider "azurerm" {
 
 
 # Obtain client configuration from the "management" provider
+# tflint-ignore: terraform_unused_declarations
 data "azurerm_client_config" "management" {
   provider = azurerm.management
 }
@@ -46,6 +47,7 @@ provider "azurerm" {
 }
 
 # Obtain client configuration from the "connectivity" provider
+# tflint-ignore: terraform_unused_declarations
 data "azurerm_client_config" "connectivity" {
   provider = azurerm.connectivity
 }
@@ -63,6 +65,7 @@ provider "azurerm" {
 }
 
 # Obtain client configuration from the "identity" provider
+# tflint-ignore: terraform_unused_declarations
 data "azurerm_client_config" "identity" {
   provider = azurerm.identity
 }

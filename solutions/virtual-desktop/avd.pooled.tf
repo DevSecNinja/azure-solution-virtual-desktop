@@ -112,6 +112,8 @@ resource "azurecaf_name" "fslogix_storage" {
   clean_input   = true
 }
 
+# TODO: Make available via private endpoint and block internet access
+
 resource "azurerm_storage_account" "fslogix_storage" {
   name                            = azurecaf_name.fslogix_storage.result
   resource_group_name             = azurerm_resource_group.avd.name

@@ -11,10 +11,10 @@ git submodule update --init
 
 # Set specific Git settings for container
 if [[ $(git config --get commit.gpgsign) == true ]]; then
-   echo "Disabling gpgsign on Git config in worktree"
-   git config --worktree commit.gpgsign false
+      echo "Disabling gpgsign on Git config in worktree"
+      git config --worktree commit.gpgsign false
 else
-   echo "Git config is not using gpgsign, proceeding..."
+      echo "Git config is not using gpgsign, proceeding..."
 fi
 
 # Install the Azure PowerShell module

@@ -3,6 +3,7 @@
 # with: each.value["id"]
 
 module "avdhv" {
+  # tflint-ignore: terraform_deprecated_interpolation
   # source = "github.com/DevSecNinja/terraform-azurerm-compute?ref=main"
   source  = "DevSecNinja/compute/azurerm"
   version = "1.1.3"
@@ -11,7 +12,7 @@ module "avdhv" {
   instances = 1
   config    = local.config
   purpose   = "avdhv"
-  subnet_id = local.subnet_id
+  subnet_id = local.hv_subnet_id
   os_type   = "windows"
   tags      = local.tags
 
