@@ -1,0 +1,30 @@
+{
+	"autorun": true,
+	"autokill": true,
+	"terminals": [
+		{
+			"name": "Generic",
+			"description": "ZSH Terminal",
+			"icon": "client",
+			"open": true,
+			"focus": true,
+			"shellPath": "/bin/zsh",
+			"commands": [
+				"uname -a"
+			]
+		},
+		{
+			"name": "Solutions/Virtual Desktop",
+			"description": "Running Terraform",
+			"icon": "server",
+			"open": false,
+			"focus": false,
+			"shellPath": "/bin/zsh",
+			"commands": [
+				"cd solutions/virtual-desktop",
+				"terraform init -upgrade",
+				"terraform plan -lock=false"
+			]
+		}
+	]
+}

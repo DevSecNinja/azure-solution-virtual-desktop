@@ -1,0 +1,6 @@
+[submodule "generic/json/config"]
+	path = generic/json/config
+	url = https://github.com/DevSecNinja/AzureEnvironmentConfig
+[submodule "generic/scripts/powershell"]
+	path = generic/scripts/powershell
+	url = https://github.com/DevSecNinja/PowerShell

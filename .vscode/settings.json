@@ -1,0 +1,25 @@
+{
+	"terminal.integrated.profiles.linux": {
+		"zsh": {
+			"path": "/bin/zsh",
+			"icon": "terminal-bash",
+			"args": [],
+			"overrideName": true
+		}
+	},
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.cwd": "${workspaceFolder}",
+	"editor.formatOnType": true,
+	"files.trimTrailingWhitespace": true,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 2000,
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": false,
+	"files.associations": {
+		"*.tf.archive": "terraform",
+		"*.tf.orig": "terraform",
+		"*.lock.hcl": "terraform"
+	}
+}
