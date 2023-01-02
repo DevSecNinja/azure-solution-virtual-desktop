@@ -19,3 +19,7 @@ updates:
     directory: "generic/json"
     schedule:
       interval: "daily"
+  - package-ecosystem: "gitsubmodule"
+    directory: "generic/scripts/powershell"
+    schedule:
+      interval: "daily"
