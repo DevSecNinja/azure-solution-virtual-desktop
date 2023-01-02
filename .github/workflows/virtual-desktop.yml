@@ -29,4 +29,5 @@ jobs:
     uses: DevSecNinja/github-actions/.github/workflows/reusable-workflow-terraform-ci.yml@main
     with:
       working-directory: ./solutions/virtual-desktop
+      use-oid-connect: true
     secrets: inherit
