@@ -3,7 +3,6 @@
 # with: each.value["id"]
 
 module "avdhv" {
-  # tflint-ignore: terraform_deprecated_interpolation
   # source = "github.com/DevSecNinja/terraform-azurerm-compute?ref=main"
   source  = "DevSecNinja/compute/azurerm"
   version = "1.1.3"
@@ -30,7 +29,8 @@ module "avdhv" {
   custom_script_extension = {
     enabled = true
     name    = "InstallDeveloperWorkstation",
-    script  = "${textencodebase64(file("${path.module}/../../generic/scripts/powershell/module/scripts/Install-DeveloperWorkstation.ps1"), "UTF-16LE")}"
+    # tflint-ignore: terraform_deprecated_interpolation
+    script = "${textencodebase64(file("${path.module}/../../generic/scripts/powershell/module/scripts/Install-DeveloperWorkstation.ps1"), "UTF-16LE")}"
   }
 
   avd_extension = {

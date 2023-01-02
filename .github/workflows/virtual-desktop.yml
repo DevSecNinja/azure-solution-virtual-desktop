@@ -26,7 +26,7 @@ permissions:
 
 jobs:
   terraform:
-    uses: DevSecNinja/github-actions/workflows/reusable-workflow-terraform-ci.yml@307fdfc46233cbf3c5c1faad4b5d193750670ac2
+    uses: DevSecNinja/github-actions/.github/workflows/reusable-workflow-terraform-ci.yml@307fdfc46233cbf3c5c1faad4b5d193750670ac2
     with:
       working-directory: ./solutions/virtual-desktop
     secrets: inherit
