@@ -5,7 +5,7 @@
 module "avdpe" {
   # source = "github.com/DevSecNinja/terraform-azurerm-compute?ref=main"
   source  = "DevSecNinja/compute/azurerm"
-  version = "1.1.3"
+  version = "1.1.4"
 
   ### Important
   instances = 1
